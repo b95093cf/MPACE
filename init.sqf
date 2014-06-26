@@ -318,17 +318,17 @@ if (isServer) then {
 	{
 		// editor varname, unique number, true = respawn only when the chopper is completely destroyed, false = respawn after some time when no crew is in or chopper is destroyed
 		if !(__OAVer) then {
-			[[ch1,301,true],[ch2,302,true],[ch3,303,false,1500],[ch4,304,false,1500],[ch1_1,311,true]] execVM "x_server\x_helirespawn2.sqf";
+			[[ch1,301,true],[ch2,302,true],[ch3,303,false,1500],[ch4,304,false,1500],[ch7,311,true]] execVM "x_server\x_helirespawn2.sqf";
 		} else {
-			[[ch1,301,true],[ch2,302,true],[ch3,303,false,1500],[ch4,304,false,1500],[ch5,305,false,600],[ch6,306,false,600],[ch1_1,311,true]] execVM "x_server\x_helirespawn2.sqf";
+			[[ch1,301,true],[ch2,302,true],[ch3,303,false,1500],[ch4,304,false,1500],[ch5,305,false,600],[ch6,306,false,600],[ch7,311,true]] execVM "x_server\x_helirespawn2.sqf";
 		};
 	} 
 	else 
 	{
 		if (d_enemy_side == "EAST") then {
-			[[ch1,301,true],[ch2,302,true],[ch3,303,false,1500],[ch4,304,false,1500],[ch5,305,false,600],[ch6,306,false,600]] execVM "x_server\x_helirespawn2.sqf";
+			[[ch1,301,true],[ch2,302,true],[ch3,303,false,1500],[ch4,304,false,1500],[ch5,305,false,600],[ch6,306,false,600],[ch7,311,true]] execVM "x_server\x_helirespawn2.sqf";
 		} else {
-			[[ch1,301,true],[ch2,302,true],[ch3,303,false,1500],[ch4,304,false,1500],[ch1_1,311,true]] execVM "x_server\x_helirespawn2.sqf";
+			[[ch1,301,true],[ch2,302,true],[ch3,303,false,1500],[ch4,304,false,1500],[ch7,311,true]] execVM "x_server\x_helirespawn2.sqf";
 		};
 	};
 	// editor varname, unique number
@@ -341,8 +341,8 @@ if (isServer) then {
 #else
 	if (!(__ACEVer)) then {
 		[
-			[ch1,301,true],[ch2,302,true],[ch3,303,false],[ch4,304,false],[ch5,305,false,600],[ch6,306,false,600],
-			[chR1,401,true],[chR2,402,true],[chR3,403,false],[chR4,404,false],[chR5,405,false,600],[chR6,406,false,600],[ch1_1,311,true]
+			[ch1,301,true],[ch2,302,true],[ch3,303,false],[ch4,304,false],[ch5,305,false,600],[ch6,306,false,600],[ch7,311,true],
+			[chR1,401,true],[chR2,402,true],[chR3,403,false],[chR4,404,false],[chR5,405,false,600],[chR6,406,false,600],[ch7,311,true]
 		] execVM "x_server\x_helirespawn2.sqf";
 		
 		if !(__OAVer) then {
@@ -355,8 +355,8 @@ if (isServer) then {
 		};
 	} else {
 		[
-			[ch1,301,true],[ch2,302,true],[ch3,303,false],[ch4,304,false],[ch5,305,false,600],[ch6,306,false,600],
-			[chR1,401,true],[chR2,402,true],[chR3,403,false],[chR4,404,false],[chR5,405,false,600],[chR6,406,false,600],[ch1_1,311,true]
+			[ch1,301,true],[ch2,302,true],[ch3,303,false],[ch4,304,false],[ch5,305,false,600],[ch6,306,false,600],[ch7,311,true],
+			[chR1,401,true],[chR2,402,true],[chR3,403,false],[chR4,404,false],[chR5,405,false,600],[chR6,406,false,600],[ch7,311,true]
 		] execVM "x_server\x_helirespawn2.sqf";
 	};
 	[
