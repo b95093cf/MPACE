@@ -105,7 +105,7 @@ d_current_truck_cargo_array = 0;
 // the only vehicles that can load an ammo box are the transport choppers and MHQs__
 #ifdef __OWN_SIDE_WEST__
 d_check_ammo_load_vecs = if (__OAVer) then {
-	["M1133_MEV_EP1","UH60M_EP1","UH1H_TK_GUE_EP1","BMP2_HQ_TK_EP1","Mi17_TK_EP1"]
+	["M1133_MEV_EP1","UH60M_EP1","UH1H_TK_GUE_EP1","BMP2_HQ_TK_EP1","Mi17_TK_EP1","CH_47F_EP1"]
 } else {
 	["LAV25_HQ","MH60S"]
 };
