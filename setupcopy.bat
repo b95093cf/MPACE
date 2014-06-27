@@ -1,3 +1,4 @@
+rem b95093cf noob
 rem run once to copy x_setup.sqf and x_macros.sqf to all directories that need it
 copy x_setup.sqf x_server /Y
 copy x_setup.sqf x_server\x_f /Y
